@@ -29,11 +29,10 @@ __language__ = __settings__.getLocalizedString
 home = __settings__.getAddonInfo('path')
 searchnum = __settings__.getSetting('search_num')
 sharinglist = __settings__.getSetting('sharinglist')
-fuseragent = __settings__.getSetting('fuseragent')
+fuseragent = 'FVideo-P22FO5'
 
 
-fuser = fshareapi.login_api(__settings__.getSetting('fuseragent'), __settings__.getSetting('fuser'), __settings__.getSetting('fpass'),
-                            __settings__.getSetting('fappkey'))
+fuser = fshareapi.login_api(fuseragent, __settings__.getSetting('fuser'), __settings__.getSetting('fpass'), 'dMnqMMZMUnN5YpvKENaEhdQQ5jxDqddt')
 # print('download_api main : ', fuser['token'])
 
 # Danh sach phim
