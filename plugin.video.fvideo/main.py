@@ -31,7 +31,8 @@ searchnum = __settings__.getSetting('search_num')
 sharinglist = __settings__.getSetting('sharinglist')
 fuseragent = __settings__.getSetting('fuseragent')
 
-fuser = fshareapi.login_api('FVideo-5ENIJN', __settings__.getSetting('username'), __settings__.getSetting('password'),
+
+fuser = fshareapi.login_api(__settings__.getSetting('fuseragent'), __settings__.getSetting('fuser'), __settings__.getSetting('fpass'),
                             __settings__.getSetting('fappkey'))
 # print('download_api main : ', fuser['token'])
 
